@@ -4,6 +4,11 @@ import 'package:ricks_games_hub/source/game_source.dart';
 import 'package:flutter/material.dart';
 
 class GameProvider extends ChangeNotifier {
+  String genre = 'Shooter';
+  setGenre(String n) {
+    genre = n;
+    notifyListeners();
+  }
 
   GameStatus status = GameStatus.initial;
 

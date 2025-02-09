@@ -1,6 +1,6 @@
 {
-    "name": "fetch_api_provider",
-    "short_name": "fetch_api_provider",
+    "name": "ricks_games_hub",
+    "short_name": "ricks_games_hub",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

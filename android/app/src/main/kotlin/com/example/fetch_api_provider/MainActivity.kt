@@ -1,4 +1,4 @@
-package com.example.fetch_api_provider
+package com.example.ricks_games_hub
 
 import io.flutter.embedding.android.FlutterActivity
 

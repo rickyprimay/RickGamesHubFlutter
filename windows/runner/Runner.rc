@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "fetch_api_provider" "\0"
+            VALUE "FileDescription", "ricks_games_hub" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "fetch_api_provider" "\0"
+            VALUE "InternalName", "ricks_games_hub" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2025 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "fetch_api_provider.exe" "\0"
-            VALUE "ProductName", "fetch_api_provider" "\0"
+            VALUE "OriginalFilename", "ricks_games_hub.exe" "\0"
+            VALUE "ProductName", "ricks_games_hub" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END
