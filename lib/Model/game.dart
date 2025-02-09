@@ -10,6 +10,7 @@ class Game {
     String developer;
     DateTime releaseDate;
     String freetogameProfileUrl;
+    bool saved;
 
     Game({
         required this.id,
@@ -23,6 +24,7 @@ class Game {
         required this.developer,
         required this.releaseDate,
         required this.freetogameProfileUrl,
+        this.saved = false
     });
 
     factory Game.fromJson(Map<String, dynamic> json) => Game(
@@ -39,4 +41,34 @@ class Game {
         freetogameProfileUrl: json["freetogame_profile_url"],
     );
 
+
+  Game copyWith({
+    int? id,
+    String? title,
+    String? thumbnail,
+    String? shortDescription,
+    String? gameUrl,
+    String? genre,
+    String? platform,
+    String? publisher,
+    String? developer,
+    DateTime? releaseDate,
+    String? freetogameProfileUrl,
+    bool? saved,
+  }) {
+    return Game(
+      id: id ?? this.id,
+      title: title ?? this.title,
+      thumbnail: thumbnail ?? this.thumbnail,
+      shortDescription: shortDescription ?? this.shortDescription,
+      gameUrl: gameUrl ?? this.gameUrl,
+      genre: genre ?? this.genre,
+      platform: platform ?? this.platform,
+      publisher: publisher ?? this.publisher,
+      developer: developer ?? this.developer,
+      releaseDate: releaseDate ?? this.releaseDate,
+      freetogameProfileUrl: freetogameProfileUrl ?? this.freetogameProfileUrl,
+      saved: saved ?? this.saved,
+    );
+  }
 }

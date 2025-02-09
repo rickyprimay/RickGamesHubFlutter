@@ -131,11 +131,32 @@ class GameCard extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
-                    game.title,
-                    style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 16),
-                    maxLines: 1,
-                    overflow: TextOverflow.ellipsis,
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Expanded(
+                        child: Text(
+                          game.title,
+                          style: const TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16,
+                          ),
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
+                        ),
+                      ),
+                      IconButton(
+                        icon: game.saved ? Icon(Icons.favorite, color: Colors.red) : Icon(Icons.favorite_border, color: Colors.white),
+                        onPressed: () {
+                          if(game.saved) {
+                            context.read<GameProvider>().setIsSaved(game, false);
+                          } else {
+                            context.read<GameProvider>().setIsSaved(game, true);
+                          }
+                        },
+                      ),
+                    ],
                   ),
                   const SizedBox(height: 4),
                   Text(game.genre, style: TextStyle(color: Colors.grey[400], fontSize: 14)),
