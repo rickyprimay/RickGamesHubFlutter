@@ -1,3 +1,3 @@
-# fetch_api_provider
+# RickGamesHubFlutter
 
 A new Flutter project.
